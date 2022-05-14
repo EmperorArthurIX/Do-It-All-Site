@@ -20,24 +20,22 @@ body
 {
     margin: 0;
     padding: 0;
-    /* background: var(--bgcolor); */
-    /* color: var(--textcolor); */
-    /* height: 100vh; */
 }
 
-body *
+/* body *
 {
     border: 1px solid black;
-}
+} */
 
 div
 {
     height: 100vh;
     border-radius: inherit;
-}
-
-.wrapper
-{
+    background: url("https://static.toiimg.com/thumb/msid-70066919,width-1200,height-900,resizemode-4/.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -45,15 +43,21 @@ div
     text-align: center;
 }
 
+.wrapper a
+{
+    text-decoration: none;
+    color: inherit;
+    border-radius: 20px;
+    width: 33vw;
+}
+
 .column
 {
     height: 100vh;
-    width: 33vw;
-    /* margin: 10px; */
-    border-radius: 20px;
+    border-radius: inherit;
     transition: background 500ms;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -62,9 +66,4 @@ div
 .column:hover
 {
     background: rgba(0,0,0,0.5);
-}
-
-.about
-{
-    background-color: blue;
 }
