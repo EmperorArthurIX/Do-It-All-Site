@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do It All | Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/calc.css">
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="">Notes</a>
+        <a href="">Clock</a>
+    </nav>
+    <div class="wrapper">
+        <section id="calc-box">
+            <button value=0 onclick="compute(this.value)" id="num0" class="div1">0</button>
+            <button value=1 onclick="compute(this.value)" id="num1" class="div2">1</button>
+            <button value=2 onclick="compute(this.value)" id="num2" class="div3">2</button>
+            <button value=3 onclick="compute(this.value)" id="num3" class="div4">3</button>
+            <button value=4 onclick="compute(this.value)" id="num4" class="div5">4</button>
+            <button value=5 onclick="compute(this.value)" id="num5" class="div6">5</button>
+            <button value=6 onclick="compute(this.value)" id="num6" class="div7">6</button>
+            <button value=7 onclick="compute(this.value)" id="num7" class="div8">7</button>
+            <button value=8 onclick="compute(this.value)" id="num8" class="div9">8</button>
+            <button value=9 onclick="compute(this.value)" id="num9" class="div10">9</button>
+            <button value="(" onclick="compute(this.value)" id="brac" class="div11">(</button>
+            <button value=")" onclick="compute(this.value)" id="brac" class="div12">)</button>
+            <button value="." onclick="compute(this.value)" id="dot" class="div13">.</button>
+            <button value="/" onclick="compute(this.value)" id="op" class="div14">/</button>
+            <button value="*" onclick="compute(this.value)" id="op" class="div15">x</button>
+            <button value="+" onclick="compute(this.value)" id="op" class="div16">+</button>
+            <button value="-" onclick="compute(this.value)" id="op" class="div17">-</button>
+            <button value="=" onclick="compute(this.value)" id="eq" class="div18">=</button>
+            <button value="CE" onclick="compute(this.value)" id="clear" class="div19">CE</button>
+            <button value="back" onclick="compute(this.value)" id="back" class="div20"><span class="material-symbols-outlined">backspace</span></button>
+            <button onclick="compute(this.id)" id="disp" class="div21"> </button>
+        </section>
+    </div>
+
+    <script src="./js/calc.js"></script>
+</body>
+
+</html>

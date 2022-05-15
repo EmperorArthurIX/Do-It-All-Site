@@ -4,6 +4,7 @@
     {
         --bgcolor: linear-gradient(red,pink,purple);
         --textcolor: white;
+        --navheight: 5vh;
     }
 }
 
@@ -13,6 +14,7 @@
     {
         --bgcolor: red;
         --textcolor: black;
+        --navheight: 5vh;
     }
 }
 
@@ -20,6 +22,7 @@ body
 {
     margin: 0;
     padding: 0;
+    font-family: 'Comfortaa', cursive;
 }
 
 /* body *
@@ -66,4 +69,27 @@ div
 .column:hover
 {
     background: rgba(0,0,0,0.5);
+}
+
+nav
+{
+    display: grid;
+    grid-template-columns: 33% auto 33%;
+    border-radius: 100px;
+    overflow:hidden;
+}
+
+nav a
+{
+    padding: 1vh;
+    color: inherit;
+    text-align:center;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+nav a:hover
+{
+    transition-duration: 1000ms;
+    color: black;
 }
